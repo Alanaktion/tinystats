@@ -1,0 +1,33 @@
+<!-- Desktop -->
+<div class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nb-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="">TinyStats</a>
+		</div>
+		<div class="collapse navbar-collapse" id="nb-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="">Home</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- Alerts -->
+<check if="{{ !empty(@error) }}">
+	<p class="alert alert-danger alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		{{ @error }}
+	</p>
+</check>
+<check if="{{ !empty(@success) }}">
+	<p class="alert alert-success alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		{{ @success }}
+	</p>
+</check>
